@@ -31,6 +31,9 @@
 
  nav {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: century-gothic, sans-serif;
   font-weight: 700;
   width: 100vw;
@@ -43,10 +46,30 @@ a {
    text-decoration: none;
    color: white;
    font-weight: 400;
+   margin-left: 1.5rem;
+   margin-right: 1.5rem;
  } 
+
+ .nav-link {
+   background-color: red;
+   display: flex;
+   justify-content: flex-end;
+ }
 
  .nav-logo {
    font-weight: 700;
    background-color: rgba(240, 55, 165, 0.5);
+   font-size: 1rem;
+   height: 1.5rem;
+   width: 1.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 100px;
+ }
 
+
+.tablet {
+   background-color: blue;
+   /* display: none; */
  }
