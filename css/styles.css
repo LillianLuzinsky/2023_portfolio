@@ -38,3 +38,15 @@
   background-color: black;
   color: white;
  }
+
+a {
+   text-decoration: none;
+   color: white;
+   font-weight: 400;
+ } 
+
+ .nav-logo {
+   font-weight: 700;
+   background-color: rgba(240, 55, 165, 0.5);
+
+ }
