@@ -71,5 +71,23 @@ a {
 
 .tablet {
    background-color: blue;
-   /* display: none; */
+   display: none;
+ }
+
+ /* tablet */
+
+ @media (min-width: 760px){
+   
+   nav {
+      background-color: grey;
+   }
+
+
+   .mobile {
+      visibility: hidden;
+   }
+
+   .tablet {
+      display: flex;
+   }
  }
