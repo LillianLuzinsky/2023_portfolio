@@ -31,15 +31,20 @@
 
  nav {
    background-color: black;
-   max-height: 3rem;
+   height: 3rem;
    font-family: century-gothic, sans-serif;
-   font-weight: 700;
+   font-size: 1rem;
    position: fixed;
    width: 100vw;
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: center;
    padding: 1.5rem 0.75rem;
+ }
+
+ .nav-container {
+   width: 100%;
+   max-width: 1200px;
  }
 
  a {
@@ -78,14 +83,38 @@
 
  /* tablet */
 
- /* @media (min-width: 760px){
+ @media (min-width: 760px){
+
+   .tablet {
+      display: flex;
+   }
    
    .mobile {
       display: none;
+   }
+
+   nav {
+      height: 4.5rem;
+      font-size: 1.5rem;
+   }
+
+   .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 3rem;
+      padding-right: 3rem;
    }
 
    .nav-link {
       max-width: 26rem;
    }
 
- } */
+   .nav-logo {
+      font-size: 2rem;
+      width: 3rem;
+      height: 3rem;
+
+   }
+
+ }
