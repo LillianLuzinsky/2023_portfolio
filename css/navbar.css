@@ -144,6 +144,16 @@ a {
      width: 2.5rem;
   }
 
+  .active, .line:hover {
+   background-color: rgba(255, 255, 255, 1);
+   color: black;
+   font-style: italic;
+   font-weight: 700;
+   transform: scaleX(1);
+   transform-origin: right;
+   transition: transform 300ms, background-color 1s;
+  }
+
   .nav-link {
      width: 26rem;
   }
