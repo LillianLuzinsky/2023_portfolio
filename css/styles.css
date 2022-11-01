@@ -1,5 +1,5 @@
 
-@import url("https://use.typekit.net/zbq4ktc.css");
+ @import url("https://use.typekit.net/zbq4ktc.css");
 
  /* font-family: century-gothic, sans-serif;
     font-weight: 400;
@@ -29,91 +29,54 @@
   box-sizing: border-box;
  }
 
- nav {
+nav {
    background-color: black;
-   height: 3rem;
    font-family: century-gothic, sans-serif;
-   font-size: 1rem;
-   position: fixed;
    width: 100vw;
+   height: 3rem;
+   position: fixed;
    display: flex;
    align-items: center;
-   justify-content: center;
-   padding: 1.5rem 0.75rem;
- }
+   padding: 00.75rem 1.5rem;
+   
+}
 
- .nav-container {
-   width: 100%;
-   max-width: 1200px;
- }
-
- a {
-   color: white;
-   text-decoration: none;
-   font-weight: 400;
- }
-
- .nav-link {
+.nav-container {
+   display: flex;
    background-color: blue;
    width: 100%;
-   display: flex;
-   justify-content: space-between;
- }
+}
 
 .nav-logo {
-   font-weight: 700;
-   background-color: rgba(240, 55, 165, 0.5);
-   width: 1.5rem;
-   height: 1.5rem;
    display: flex;
    justify-content: center;
    align-items: center;
-   border-radius: 50px;
-   transition: background-color 300ms;
- }
-
-.nav-logo:hover, .nav-logo:active {
-   background-color: rgba(240, 55, 165, 1);
+   font-size: 1rem;
+   font-weight: 700;
+   word-spacing: 1px;
+   background-color: rgba(240, 55, 165, 0.5);
+   height: 1.5rem;
+   width: 1.5rem;
+   border-radius: 100px;
 }
+
+.nav-link {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: teal;
+   width: 100%;
+}
+
+a {
+   color: white;
+   font-size: 0.75rem;
+   line-height: 1.5rem;
+   text-decoration: none;
+}
+
+
 
 .tablet {
    display: none;
 }
-
- /* tablet */
-
- @media (min-width: 760px){
-
-   .tablet {
-      display: flex;
-   }
-   
-   .mobile {
-      display: none;
-   }
-
-   nav {
-      height: 4.5rem;
-      font-size: 1.5rem;
-   }
-
-   .nav-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-left: 3rem;
-      padding-right: 3rem;
-   }
-
-   .nav-link {
-      max-width: 26rem;
-   }
-
-   .nav-logo {
-      font-size: 2rem;
-      width: 3rem;
-      height: 3rem;
-
-   }
-
- }
