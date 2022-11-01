@@ -55,7 +55,7 @@ nav {
    align-items: center;
    font-size: 1rem;
    font-weight: 700;
-   word-spacing: 1px;
+   letter-spacing: 1px;
    background-color: rgba(240, 55, 165, 0.5);
    height: 1.5rem;
    width: 1.5rem;
@@ -85,6 +85,10 @@ nav {
    transform: scaleX(1);
 }
 
+.nav-logo:hover {
+   font-style: italic;
+}
+
 .nav-link {
    display: flex;
    align-items: center;
@@ -95,6 +99,7 @@ nav {
 
 a {
    color: white;
+   letter-spacing: 0.5px;
    font-size: 0.75rem;
    line-height: 1.5rem;
    text-decoration: none;
@@ -147,9 +152,14 @@ a {
       display: none;
    }
 
-   .tablet {
+   .tablet{
       display: flex;
-      background-color: blue;
+   }
+
+   nav {
+      height: 4.5rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
    }
 
    .nav-container {
@@ -157,9 +167,23 @@ a {
       justify-content: space-between;
    }
 
+   .nav-logo {
+      font-size: 1.5rem;
+      height: 2.5rem;
+      width: 2.5rem;
+   }
+
    .nav-link {
       width: 26rem;
    }
-   
+
+   a {
+      font-size: 1.25rem;
+      line-height: 2rem;
+   }
+
+   .line {
+      padding: 0rem 1rem;
+   }
 
 }
