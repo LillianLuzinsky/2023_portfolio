@@ -2,6 +2,7 @@
 /* -------------- View my projects link ------------ */
 
 .view-link1, .view-link2, .back-link, .back-to-top {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
