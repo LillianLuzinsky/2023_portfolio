@@ -8,6 +8,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 00.75rem 1.5rem;
+  z-index: 1;
   
 }
 
