@@ -43,7 +43,9 @@ nav {
 
 .nav-container {
    display: flex;
+   margin: 0 auto;
    width: 100%;
+   max-width: 1200px;
 }
 
 .nav-logo {
@@ -135,4 +137,29 @@ a {
 
 .tablet {
    display: none;
+}
+
+/****** tablet ******/
+
+@media (min-width: 760px) {
+
+   .mobile {
+      display: none;
+   }
+
+   .tablet {
+      display: flex;
+      background-color: blue;
+   }
+
+   .nav-container {
+      width: 100%;
+      justify-content: space-between;
+   }
+
+   .nav-link {
+      width: 26rem;
+   }
+   
+
 }
