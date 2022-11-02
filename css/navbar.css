@@ -9,7 +9,7 @@ nav {
   align-items: center;
   padding: 00.75rem 1.5rem;
   z-index: 1;
-  
+  margin-top: 0;
 }
 
 .nav-container {

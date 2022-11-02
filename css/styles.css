@@ -41,112 +41,60 @@
  section{
    margin: 0 auto;
    width: 100%;
+   color: white;
  }
 
  .content {
    padding: 0 1.5rem;
+   padding-top: 4.5rem;
+   
  }
- 
- /* .container{
-   padding: 75px 5%;
-   margin: auto 0;
-   animation: fadeIn 1000ms;
+
+ header {
+   color: white;
+   font-size: 2rem;
+   font-family: century-gothic, sans-serif;
+   font-weight: 700;
  }
- 
- h1{
-   font-size: 2.19rem;
-   font-family: century-gothic,sans-serif;
- }
- 
- h2{
-   font-size: 1.5rem;
-   letter-spacing: 1px;
-   margin-bottom: 0.5rem;
-   font-family: century-gothic,sans-serif;
- }
- 
- p, .left-col, .right-col{
+
+ .description {
+   width: 100%;
    font-size: 1rem;
-   font-weight: 400;
-   letter-spacing: 1px;
    line-height: 2rem;
-   margin-top: 1.5rem;
  }
- 
- a {
-   text-decoration: none;
-   font-family: century-gothic,sans-serif;
-   color: turquoise;
-   transition: 250ms;
+
+ button {
+   background-color: Transparent;
+   border: none;
+   display: flex;
+   align-items: center;
+   font-family: century-gothic, sans-serif;
+   font-size: 1.5rem;
+   line-height: 2rem;
+   font-weight: 700;
  }
- 
- #about p :hover, .contact-text p :hover, .description p :hover{
-   color: #F037A5;
-   transition: 500ms;
+
+ button:hover {
+   font-style: italic;
  }
- 
- .copyright, .copyright2{
-   color: #858585;
-   font-size: 0.75rem;
-   text-align: center;
-   margin-bottom: 1.5rem;
+
+ button p {
+   margin-right: 1.5rem;
+   display: none;
  }
- 
- /*************
- media queries
- *************/
- /* @media (min-width: 760px){
-   h1 {
-     font-size: 4.7rem;
-   }
- 
-   h2 {
-     font-size: 2.5rem;
-   }
- 
-   p, .left-col, .right-col{
-     font-size: 1.25rem;
-     line-height: 2.5rem;
-   }
- 
-   .copyright{
-     font-size: 1rem;
-     position: absolute;
-     bottom: 0;
-     left: 50%;
-     transform: translate(-50%);
-   }
- 
-   .copyright2{
-     font-size: 1rem;
-   }
- 
+
+ .icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2.5px solid #00BCD4;
+   height: 2.5rem;
+   width: 2.5rem;
+   border-radius: 100rem;
  }
- 
- @media (min-width: 1024px){
- 
-   .container {
-    max-width: 1200px;
-    padding: 100px 5%;
-   }
- 
-   .left-col{
-     max-width: 48%;
-     margin-right: 2%;
-   }
- 
-   .right-col{
-     max-width: 48%;
-     padding-left: 2%;
-   }
- 
+
+ .icon svg {
+   height: 1.5rem;
+   width: auto;
+   transform: rotate(90deg);
  }
- 
- @media (min-width: 1200px){
-   .container{
-     height: auto;
-     width: 100%;
-     padding: 7.5% 0;
-     margin: 0 auto;
-   }
- } */
