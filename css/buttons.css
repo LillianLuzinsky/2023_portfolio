@@ -1,0 +1,77 @@
+button {
+  background-color: Transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-family: century-gothic, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+button:hover {
+  font-style: italic;
+}
+
+button p {
+  margin-right: 1.5rem;
+  display: none;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2.5px solid #00BCD4;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100rem;
+}
+
+.icon svg {
+  height: 1.5rem;
+  width: auto;
+  transform: rotate(90deg);
+}
+
+
+/* -------------- back to top link ------------ */
+
+.back-to-top {
+  position: fixed;
+  z-index: 2;
+  top: 85%;
+  right: -1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222222;
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50px 0 0 50px;
+  color: white;
+  transition: width ease 250ms;
+}
+
+.back-to-top:hover {
+  width: 100px;
+}
+
+.back-to-top svg {
+  position: absolute;
+  margin-left: 8px;
+}
+
+.back-to-top p {
+  position: absolute;
+  right: 8px;
+  opacity: 0;
+  transition: opacity 500ms;
+  font-style: italic;
+}
+
+.back-to-top:hover p {
+ opacity: 1;
+}

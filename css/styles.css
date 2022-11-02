@@ -62,39 +62,3 @@
    font-size: 1rem;
    line-height: 2rem;
  }
-
- button {
-   background-color: Transparent;
-   border: none;
-   display: flex;
-   align-items: center;
-   font-family: century-gothic, sans-serif;
-   font-size: 1.5rem;
-   line-height: 2rem;
-   font-weight: 700;
- }
-
- button:hover {
-   font-style: italic;
- }
-
- button p {
-   margin-right: 1.5rem;
-   display: none;
- }
-
- .icon {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   border: 2.5px solid #00BCD4;
-   height: 2.5rem;
-   width: 2.5rem;
-   border-radius: 100rem;
- }
-
- .icon svg {
-   height: 1.5rem;
-   width: auto;
-   transform: rotate(90deg);
- }

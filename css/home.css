@@ -5,6 +5,7 @@
   height: 100vh;
   background-position-x: 60%;
   position: relative;
+  z-index: -1;
 }
 
 #home header {
