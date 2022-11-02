@@ -60,12 +60,11 @@ nav {
   font-style: italic;
 }
 
-.nav-link {
+.nav-links {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  
 }
 
 a {
@@ -77,21 +76,36 @@ a {
   background-color: rgba(255, 255, 255, 0.10);
 }
 
-.line:hover {
-  color: black;
+.link:hover {
+  /* color: black; */
   font-weight: 700;
   font-style: italic;
 }
 
-.line {
+.link {
   position: relative;
   border-radius: 100px;
   padding: 0 0.5rem;
   overflow: hidden;
 }
 
+.link.active {
+  transform-origin: left;
+  transform: scaleX(1);
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+  font-style: italic;
+  font-weight: 700;
+}
 
-.line::before {
+.link.active::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+.link::before {
   content: " ";
   position: absolute;
   left: 0;
@@ -105,10 +119,10 @@ a {
   transition: transform 300ms, background-color 1s;
 } 
 
-.line:hover::before {
+.link:hover::before {
   transform-origin: left;
   transform: scaleX(1);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 .tablet {
@@ -144,17 +158,7 @@ a {
      width: 2.5rem;
   }
 
-  /* .active {
-   background-color: rgba(255, 255, 255, 1);
-   color: black;
-   font-style: italic;
-   font-weight: 700;
-   transform: scaleX(1);
-   transform-origin: right;
-   transition: transform 300ms, background-color 1s;
-  } */
-
-  .nav-link {
+  .nav-links {
      width: 26rem;
   }
 
@@ -163,7 +167,7 @@ a {
      line-height: 2rem;
   }
 
-  .line {
+  .link {
      padding: 0rem 1rem;
   }
 
