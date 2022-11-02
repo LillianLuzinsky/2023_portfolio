@@ -37,41 +37,65 @@ button p {
 
 /* -------------- back to top link ------------ */
 
-.back-to-top {
+.back-to-top .icon {
   position: fixed;
+  bottom: -2px;
+  right: 0;
   z-index: 2;
-  top: 85%;
-  right: -1px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #222222;
-  height: 50px;
-  width: 50px;
-  border: 1px solid white;
-  border-radius: 50px 0 0 50px;
-  color: white;
-  transition: width ease 250ms;
-}
-
-.back-to-top:hover {
-  width: 100px;
+  border-radius: 0 0 100rem 100rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: white solid 2px;
+  transform: rotate(180deg);
 }
 
 .back-to-top svg {
-  position: absolute;
-  margin-left: 8px;
+  fill: white;
 }
 
-.back-to-top p {
-  position: absolute;
-  right: 8px;
-  opacity: 0;
-  transition: opacity 500ms;
-  font-style: italic;
+/****** tablet ******/
+
+@media (min-width: 760px) {
+
+  .back-to-top {
+    position: fixed;
+    z-index: 2;
+    top: 85%;
+    right: -1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 50px 0 0 50px;
+    color: white;
+    transition: width ease 250ms;
+  }
+  
+  .back-to-top:hover {
+    width: 100px;
+  }
+  
+  .back-to-top svg {
+    position: absolute;
+    margin-left: 8px;
+  }
+  
+  .back-to-top p {
+    position: absolute;
+    right: 8px;
+    opacity: 0;
+    transition: opacity 500ms;
+    font-style: italic;
+  }
+  
+  .back-to-top:hover p {
+   opacity: 1;
+  }
+
 }
 
-.back-to-top:hover p {
- opacity: 1;
-}
