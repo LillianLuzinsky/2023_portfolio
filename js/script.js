@@ -1,14 +1,20 @@
- //Make navbar links active
- const links = document.querySelectorAll(".link");
+const sections = document.querySelectorAll('section');
+const navLi = document.querySelectorAll('nav .nav-container ul li');
 
- links.forEach(clickedLink => {
-     //Add onClick event
-     clickedLink.addEventListener('click', () => {
-         //Remove the active class from all links
-         links.forEach(link => {
-             link.classList.remove('active');
-         })
-         //Add the active class on the clicked tab
-         clickedLink.classList.add('active');
-     })
- })
+window.addEventListener('scroll', ()=> {
+  let current = '';
+  
+  sections.forEach (section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if(scrollY >= (sectionTop - sectionHeight/3)){
+      current = section.getAttribute('id');
+    }
+  })
+  navLi.forEach( li => {
+    li.classList.remove('active');
+    if(li.classList.contains(current)){
+      li.classList.add('active');
+    }
+  })
+})
