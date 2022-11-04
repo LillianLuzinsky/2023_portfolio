@@ -62,11 +62,11 @@ nav .container ul li a {
   text-decoration: none;
 }
 
-nav .container ul li.active {
+nav .nav-container ul li.active {
   background-color: turquoise;
   transition: 1s ease background-color;
 }
 
-nav .container ul li.active a {
+nav .nav-container ul li.active a {
   color: white;
 }

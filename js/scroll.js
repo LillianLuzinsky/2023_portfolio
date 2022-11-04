@@ -1,6 +1,6 @@
 
 const sections = document.querySelectorAll('section');
-const navLi = document.querySelectorAll('nav .container ul li');
+const navLi = document.querySelectorAll('nav .nav-container ul li');
 
 window.addEventListener('scroll', ()=> {
   let current = '';
@@ -8,7 +8,7 @@ window.addEventListener('scroll', ()=> {
   sections.forEach (section => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if(scrollY >= sectionTop - 1){
+    if(scrollY >= (sectionTop - sectionHeight/3)){
       current = section.getAttribute('id');
     }
   })
