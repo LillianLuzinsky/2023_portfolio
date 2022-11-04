@@ -86,10 +86,6 @@ nav {
   overflow: hidden;
 }
 
-.nav-logo:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .nav-logo.active {
   background-color: rgba(240, 55, 165, 1);
 }
@@ -145,7 +141,7 @@ nav {
   transition: background-color 1s, color 500ms;
 }
 
-.link.active::before {
+.link.active::before, .nav-logo.active::before {
   transform-origin: left;
   transform: scaleX(1);
 }
