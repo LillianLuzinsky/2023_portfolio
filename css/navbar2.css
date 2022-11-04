@@ -62,8 +62,6 @@ nav {
 }
 
 .nav-container .tablet {
-  background-color: yellow;
-  color: black;
   display: none;
 }
 
@@ -164,4 +162,36 @@ nav {
   transition: transform 300ms, background-color 1s;
 }
 
+/****** tablet ******/
 
+@media (min-width: 760px) {
+  
+  .mobile {
+    display: none;
+  }
+
+  .nav-container .tablet {
+    display: flex;
+  }
+
+  nav {
+    height: 4.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .nav-logo {
+    font-size: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .link a {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+
+  .link {
+    padding: 0rem 1rem;
+  }
+}
