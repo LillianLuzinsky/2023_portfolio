@@ -3,10 +3,11 @@
   background: url("../images/Homepage_photo2.jpg") center no-repeat;
   background-size: cover;
   height: 100vh;
-  background-position-x: 60%;
+  background-position-x: 55%;
   position: relative;
   z-index: -1;
 }
+
 
 #home header {
   color: rgba(240, 55, 165, 1);
@@ -16,6 +17,10 @@
 .hi {
   margin-bottom: 0.5rem;
   font-size: 2.25rem;
+}
+
+.name {
+  font-size: 1.75rem;
 }
 
 .small-circle{
@@ -49,6 +54,6 @@ header h1{
 
 #home .description {
   color: black;
-  max-width: 55%;
+  max-width: 45%;
   margin-bottom: 1rem;
 }
