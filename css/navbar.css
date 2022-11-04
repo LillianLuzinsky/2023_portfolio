@@ -87,7 +87,7 @@ nav {
 }
 
 .nav-logo.active {
-  background-color: rgba(240, 55, 165, 1);
+  font-style: italic;
 }
 
 .nav-logo a {
@@ -113,6 +113,7 @@ nav {
   position: absolute;
   transform-origin: left;
   transform: scaleX(1);
+  background-color: rgba(240, 55, 165, 1);
 }
 
 .nav-logo:hover {
@@ -138,6 +139,7 @@ nav {
   transform: scaleX(1);
   background-color: rgba(255, 255, 255, 0.2);
   font-weight: 700;
+  font-style: italic;
   transition: background-color 1s, color 500ms;
 }
 
