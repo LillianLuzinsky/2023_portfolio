@@ -129,9 +129,14 @@ nav {
 }
 
 .link:hover {
+  transform: skew(-7.5deg, 0);
+}
+
+.link:hover::before {
   font-weight: 700;
   background-color: rgba(255, 255, 255, 0.1);
-  transform: skew(-7.5deg, 0);
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 .link.active {
