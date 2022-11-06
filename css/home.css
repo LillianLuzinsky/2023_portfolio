@@ -2,58 +2,14 @@
 #home {
   background: url("../images/Homepage_photo2.jpg") center no-repeat;
   background-size: cover;
-  height: 100vh;
   background-position-x: 55%;
   position: relative;
   z-index: -1;
-}
-
-
-#home header {
-  color: rgba(240, 55, 165, 1);
-  margin-bottom: 1rem;
-}
-
-.hi {
-  margin-bottom: 0.5rem;
-  font-size: 2.25rem;
-}
-
-.name {
-  font-size: 1.75rem;
-}
-
-.small-circle{
-  background: #00BCD4;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  mix-blend-mode: multiply;
-  margin-left: 3.25rem;
-}
-
-.big-circle{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(240, 55, 165, 1);
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  letter-spacing: 2px;
-  margin-top: -1rem;
-}
-
-.big-circle h1{
-  color: white;
-}
-
-header h1{
-  color: rgba(240, 55, 165, 1);
-}
-
-#home .description {
   color: black;
-  max-width: 45%;
-  margin-bottom: 1rem;
+  max-height: 1200px;
 }
+
+#home h1 {
+  color: magenta;
+}
+

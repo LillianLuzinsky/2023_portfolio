@@ -1,35 +1,5 @@
 @import url("https://use.typekit.net/zbq4ktc.css");
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-section {
-  height: 100vh;
-  width: 100%;
-  background-color: #222;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-#home {
-  background-color: royalblue;
-}
-
-#about {
-  background-color: orange;
-}
-
-#contact {
-  background-color: crimson;
-}
-
-/* ------------- navbar -------------*/
-
 nav {
   position: fixed;
   top: 0;

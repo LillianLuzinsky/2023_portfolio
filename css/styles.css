@@ -23,17 +23,17 @@
     font-weight: 800;
     */
 
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
  }
 
- html {
+html {
   scroll-behavior: smooth;
 }
 
- body{
+body{
    font-family: 'Mulish', sans-serif;
    font-weight: 400;
    overflow-x: hidden;
@@ -42,35 +42,33 @@
    background: #222222;
  }
  
- section{
-   margin: 0 auto;
-   width: 100%;
-   color: white;
- }
-
- .content {
-   padding: 0 1.5rem;
- }
-
- ul {
+ul {
   list-style: none;
  }
 
- a {
+a {
   text-decoration: none;
   color: white;
   letter-spacing: 1px;
 }
+ 
+section {
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #222;
+  color: white;
+  border-bottom: 1px solid white;
+}
 
- header {
+.content {
+  padding: 4rem 1.5rem;
+}
+
+
+h1 {
    color: white;
    font-size: 2rem;
+   line-height: 4rem;
    font-family: century-gothic, sans-serif;
    font-weight: 700;
- }
-
- .description {
-   width: 100%;
-   font-size: 0.85rem;
-   line-height: 1.75rem;
  }
