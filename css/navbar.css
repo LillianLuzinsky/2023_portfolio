@@ -133,6 +133,14 @@ nav {
   transition: transform 300ms, background-color 1s;
 }
 
+/****** mobile ******/ 
+  @media (min-width: 350px){
+     nav {
+      font-size: 1rem;
+     }
+  }
+}
+
 
 /****** tablet ******/
 

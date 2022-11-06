@@ -20,6 +20,10 @@
   margin-bottom: 1rem;
 }
 
+header h1{
+  color: #F037A5;
+}
+
 header .hi {
   font-size: 5rem;
 }
@@ -56,10 +60,6 @@ header .hi {
 
 .big-circle h1{
   color: white;
-}
-
-header h1{
-  color: #F037A5;
 }
 
 .description{
