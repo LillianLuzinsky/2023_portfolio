@@ -7,7 +7,7 @@ nav {
   background-color: black;
   color: white;
   font-size: 0.75rem;
-  padding: 0 1.5rem;
+  padding: 0 5%;
   font-family: century-gothic, sans-serif;
   height: 3rem;
   display: flex;
@@ -33,10 +33,6 @@ nav {
 
 .nav-container .tablet {
   display: none;
-}
-
-.nav-container .nav-links {
-  max-width: 26rem;
 }
 
 .nav-logo {
@@ -137,6 +133,7 @@ nav {
   transition: transform 300ms, background-color 1s;
 }
 
+
 /****** tablet ******/
 
 @media (min-width: 760px) {
@@ -153,6 +150,10 @@ nav {
     height: 4.5rem;
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .nav-container .nav-links {
+    max-width: 26rem;
   }
 
   .nav-logo {
