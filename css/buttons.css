@@ -103,21 +103,13 @@
     width: 100px;
   }
 
-  .arrow {
-    height: 3.25rem;
-  }
-
-}
-
-/****** desktop ******/
-
-@media (min-width: 1200px){
-
   .view-projects:hover .icon {
     rotate: 90deg;
   }
 
   .arrow {
+    height: 3.25rem;
     transform: rotate(0);
   }
+
 }
