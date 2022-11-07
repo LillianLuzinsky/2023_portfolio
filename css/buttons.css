@@ -1,21 +1,4 @@
-button {
-  height: 100px;
-  width: 200px;
-  color: #000;
-}
-
-button a {
-  color: #000;
-}
-
-button:hover {
-  background-color: red;
-  color: #000;
-}
-
-/* -------------- View my projects link ------------ */
-
-.view-projects {
+.view-link1 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -25,29 +8,32 @@ button:hover {
   font-size: 1.5rem;
   line-height: 2rem;
   width: fit-content;
-  background-color: red;
-  display: none;
+  padding-top: 1.5rem;
+}
+
+.view-link1 a {
+  color: black;
 }
 
 .back-to-top {
   padding: 0;
 }
 
-.view-projects:hover{
+.view-link1:hover, .view-link2:hover, .back-link:hover, .back-to-top:hover{
   cursor: pointer;
 }
 
-.view-projects p, .view-link2 p, .back-link p {
+.view-link1 p, .view-link2 p, .back-link p {
   margin-right: 3rem;
   transition: all 300ms;
 }
 
-.view-projects:hover p {
+.view-link1:hover p {
   color: #00BCD4;
   font-style: italic;
 }
 
-.view-projects .icon {
+.view-link1 .icon {
   position: relative;
   display: flex;
   align-items: center;
@@ -55,11 +41,11 @@ button:hover {
   transition: rotate 500ms;
 }
 
-.view-projects:hover .icon {
+.view-link1:hover .icon {
   rotate: 90deg;
 }
 
-.view-projects .outer-cicle {
+.view-link1 .outer-cicle {
   position: absolute;
   height: 95px;
   width: 95px;
@@ -67,11 +53,11 @@ button:hover {
   border: 5px solid #00BCD4;
 }
 
-.view-projects:hover .outer-cicle {
+.view-link1:hover .outer-cicle {
   border: none;
 }
 
-.view-projects .inner-circle {
+.view-link1 .inner-circle {
   position: absolute;
   height: 5px;
   width: 5px;
@@ -80,7 +66,7 @@ button:hover {
   transition: width 300ms, height 300ms;
 }
 
-.view-projects:hover .inner-circle {
+.view-link1:hover .inner-circle {
   width: 100px;
   height: 100px;
   background-color: rgba(0, 188, 212, 0.5);
@@ -88,6 +74,6 @@ button:hover {
   mix-blend-mode: multiply;
 }
 
-.view-projects:hover path {
+.view-link1:hover path {
   fill: black;
 }
