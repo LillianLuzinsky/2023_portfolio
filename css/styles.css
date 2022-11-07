@@ -82,3 +82,30 @@ h1 {
  button:hover {
   background-color: red;
  }
+
+/****** tablet ******/
+
+@media (min-width: 744px){
+  .content {
+    padding: 6.5rem 3rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+
+/****** desktop ******/
+
+@media (min-width: 1200px){
+  section {
+    border-bottom: none;
+  }
+  .content {
+    min-height: 100vh;
+    max-height: 1200px;
+    padding: 8rem 0rem;
+    border-bottom: 1px solid white;
+  }
+}

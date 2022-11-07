@@ -142,7 +142,7 @@ nav {
 
 /****** tablet ******/
 
-@media (min-width: 760px) {
+@media (min-width: 744px) {
   
   .mobile {
     display: none;

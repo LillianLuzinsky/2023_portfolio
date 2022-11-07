@@ -82,7 +82,7 @@
 
 /****** tablet ******/
 
-@media (min-width: 760px){
+@media (min-width: 744px){
 
   .view-projects {
     padding-left: 0;
@@ -111,7 +111,7 @@
 
 /****** desktop ******/
 
-@media (min-width: 1024px){
+@media (min-width: 1200px){
 
   .view-projects:hover .icon {
     rotate: 90deg;
