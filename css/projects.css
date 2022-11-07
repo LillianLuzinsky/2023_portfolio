@@ -1,0 +1,22 @@
+
+.projects-half {
+  height: 2.5rem;
+  width: 1.25rem;
+  background-color: white;
+  border-radius: 0 100rem 100rem 0;
+}
+
+.projects-circle {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100rem;
+  border: 1px solid rgba(240, 55, 165, 0.5);
+}
+
+.one {
+  background-color: rgba(240, 55, 165, 0.5);
+}
+
+.two {
+  background-color: rgba(0, 188, 212, 0.5);
+}

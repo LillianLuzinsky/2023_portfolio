@@ -66,7 +66,6 @@ section {
   margin: 0 auto;
 }
 
-
 h1 {
    color: white;
    font-size: 2rem;
@@ -75,13 +74,17 @@ h1 {
    font-weight: 700;
  }
 
- button {
-  background-color: aqua;
- }
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
- button:hover {
-  background-color: red;
- }
+.title-icons {
+  display: flex;
+  height: 2.5rem;
+}
 
 /****** tablet ******/
 
