@@ -1,0 +1,6 @@
+.about-circle {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100rem;
+  border: 1px solid rgba(0, 188, 212, 0.5);;
+}

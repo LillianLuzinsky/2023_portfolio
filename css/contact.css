@@ -1,0 +1,14 @@
+
+.contact-half {
+  height: 2.5rem;
+  width: 1.25rem;
+  background-color: rgba(240, 55, 165, 0.5);
+  border-radius: 0 100rem 100rem 0;
+}
+
+.contact-circle {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
