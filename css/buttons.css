@@ -1,4 +1,4 @@
-.view-link1 {
+.view-projects {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,7 +11,7 @@
   padding-top: 1.5rem;
 }
 
-.view-link1 a {
+.view-projects a {
   color: black;
 }
 
@@ -19,21 +19,21 @@
   padding: 0;
 }
 
-.view-link1:hover, .view-link2:hover, .back-link:hover, .back-to-top:hover{
+.view-projects:hover, .view-link2:hover, .back-link:hover, .back-to-top:hover{
   cursor: pointer;
 }
 
-.view-link1 p, .view-link2 p, .back-link p {
+.view-projects p, .view-link2 p, .back-link p {
   margin-right: 3rem;
   transition: all 300ms;
 }
 
-.view-link1:hover p {
+.view-projects:hover p {
   color: #00BCD4;
   font-style: italic;
 }
 
-.view-link1 .icon {
+.view-projects .icon {
   position: relative;
   display: flex;
   align-items: center;
@@ -41,11 +41,11 @@
   transition: rotate 500ms;
 }
 
-.view-link1:hover .icon {
+.view-projects:hover .icon {
   rotate: 90deg;
 }
 
-.view-link1 .outer-cicle {
+.view-projects .outer-cicle {
   position: absolute;
   height: 95px;
   width: 95px;
@@ -53,11 +53,11 @@
   border: 5px solid #00BCD4;
 }
 
-.view-link1:hover .outer-cicle {
+.view-projects:hover .outer-cicle {
   border: none;
 }
 
-.view-link1 .inner-circle {
+.view-projects .inner-circle {
   position: absolute;
   height: 5px;
   width: 5px;
@@ -66,7 +66,7 @@
   transition: width 300ms, height 300ms;
 }
 
-.view-link1:hover .inner-circle {
+.view-projects:hover .inner-circle {
   width: 100px;
   height: 100px;
   background-color: rgba(0, 188, 212, 0.5);
@@ -74,6 +74,6 @@
   mix-blend-mode: multiply;
 }
 
-.view-link1:hover path {
+.view-projects:hover path {
   fill: black;
 }

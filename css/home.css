@@ -70,6 +70,10 @@ header .hi {
   margin-bottom: 1rem;
 }
 
+#home a {
+  color: black;
+}
+
 /***** mobile *****/
 
 @media (min-width: 350px) {
