@@ -1,101 +1,77 @@
-button {
-  background-color: Transparent;
-  border: none;
+/* -------------- View my projects link ------------ */
+
+.view-projects {
   display: flex;
+  flex-direction: row;
   align-items: center;
   font-family: century-gothic, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 700;
+  width: fit-content;
+  background-color: red;
 }
 
-button:hover {
+.back-to-top {
+  padding: 0;
+}
+
+.view-projects:hover{
+  cursor: pointer;
+}
+
+.view-projects p, .view-link2 p, .back-link p {
+  margin-right: 3rem;
+  transition: all 300ms;
+}
+
+.view-projects:hover p {
+  color: #00BCD4;
   font-style: italic;
 }
 
-button p {
-  margin-right: 1.5rem;
-  display: none;
-}
-
-.icon {
+.view-projects .icon {
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border: 2.5px solid #00BCD4;
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 100rem;
+  justify-content: center;
+  transition: rotate 500ms;
 }
 
-.icon svg {
-  height: 1.5rem;
-  width: auto;
-  transform: rotate(90deg);
+.view-projects:hover .icon {
+  rotate: 90deg;
 }
 
-
-/* -------------- back to top link ------------ */
-
-.back-to-top .icon {
-  position: fixed;
-  bottom: -2px;
-  right: 0;
-  z-index: 2;
-  border-radius: 0 0 100rem 100rem;
-  height: 2.5rem;
-  width: 2.5rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: white solid 2px;
-  transform: rotate(180deg);
+.view-projects .outer-cicle {
+  position: absolute;
+  height: 95px;
+  width: 95px;
+  border-radius: 500px;
+  border: 5px solid #00BCD4;
 }
 
-.back-to-top svg {
-  fill: white;
+.view-projects:hover .outer-cicle {
+  border: none;
 }
 
-/****** tablet ******/
-
-@media (min-width: 760px) {
-
-  .back-to-top {
-    position: fixed;
-    z-index: 2;
-    top: 85%;
-    right: -1px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #222222;
-    height: 50px;
-    width: 50px;
-    border: 1px solid white;
-    border-radius: 50px 0 0 50px;
-    color: white;
-    transition: width ease 250ms;
-  }
-  
-  .back-to-top:hover {
-    width: 100px;
-  }
-  
-  .back-to-top svg {
-    position: absolute;
-    margin-left: 8px;
-  }
-  
-  .back-to-top p {
-    position: absolute;
-    right: 8px;
-    opacity: 0;
-    transition: opacity 500ms;
-    font-style: italic;
-  }
-  
-  .back-to-top:hover p {
-   opacity: 1;
-  }
-
+.view-projects .inner-circle {
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  background-color: rgba(0, 188, 212, 0);
+  border-radius: 500px;
+  transition: width 300ms, height 300ms;
 }
 
+.view-projects:hover .inner-circle {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0, 188, 212, 0.5);
+  border-radius: 500px;
+  mix-blend-mode: multiply;
+}
+
+.view-projects:hover path {
+  fill: black;
+}

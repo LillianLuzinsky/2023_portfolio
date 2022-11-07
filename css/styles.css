@@ -72,3 +72,11 @@ h1 {
    font-family: century-gothic, sans-serif;
    font-weight: 700;
  }
+
+ button {
+  background-color: aqua;
+ }
+
+ button:hover {
+  background-color: red;
+ }
