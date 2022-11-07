@@ -61,7 +61,8 @@ header .hi {
 
 .description{
   color: black;
-  max-width: 55%;
+  width: 55%;
+  max-width: 500px;
   font-size: 0.75rem;
   line-height: 1.5rem;
   margin-bottom: 1rem;
@@ -119,9 +120,5 @@ header .hi {
 @media (min-width: 1200px){
   #home header{
     margin-bottom: 2rem;
-  }
-
-  .description {
-    max-width: 500px;
-  }
+  } 
 }
