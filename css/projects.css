@@ -19,3 +19,36 @@
 .two {
   background-color: rgba(0, 188, 212, 0.5);
 }
+
+/****** tablet ******/
+
+@media (min-width: 744px){
+
+  .projects-half {
+    height: 5rem;
+    width: 2.5rem;
+  }
+
+  .projects-circle {
+    height: 5rem;
+    width: 5rem;
+    border: 1.5px solid rgba(240, 55, 165, 0.5);
+  }
+}
+
+/****** desktop ******/
+
+@media (min-width: 1200px){
+
+  .projects-half {
+    height: 6rem;
+    width: 3rem;
+  }
+
+  .projects-circle {
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid rgba(240, 55, 165, 0.5);
+  }
+
+}

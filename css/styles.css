@@ -97,6 +97,10 @@ h1 {
     font-size: 5rem;
     line-height: 6rem;
   }
+  
+  .title-icons {
+    height: 5rem;
+  }
 }
 
 /****** desktop ******/
@@ -110,5 +114,9 @@ h1 {
     max-height: 1200px;
     padding: 8rem 0rem;
     border-bottom: 1px solid white;
+  }
+
+  .title-icons {
+    height: 6.25rem;
   }
 }

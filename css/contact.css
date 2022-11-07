@@ -1,4 +1,8 @@
 
+#contact .content {
+  border-bottom: none;
+}
+
 .contact-half {
   height: 2.5rem;
   width: 1.25rem;
@@ -11,4 +15,37 @@
   width: 2.5rem;
   border-radius: 100rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/****** tablet ******/
+
+@media (min-width: 744px){
+
+  .contact-half {
+    height: 5rem;
+    width: 2.5rem;
+  }
+
+  .contact-circle {
+    height: 5rem;
+    width: 5rem;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+/****** desktop ******/
+
+@media (min-width: 1200px){
+  
+  .contact-half {
+    height: 6rem;
+    width: 3rem;
+  }
+
+  .contact-circle {
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+
 }
