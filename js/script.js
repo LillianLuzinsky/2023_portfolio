@@ -1,3 +1,5 @@
+//activate nav-links on click and scroll//
+
 const sections = document.querySelectorAll('section');
 const navLi = document.querySelectorAll('nav .nav-container ul li');
 
