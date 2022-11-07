@@ -11,10 +11,10 @@
 }
 
 #home .content {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
 }
 
 #home header {

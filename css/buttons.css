@@ -1,3 +1,18 @@
+button {
+  height: 100px;
+  width: 200px;
+  color: #000;
+}
+
+button a {
+  color: #000;
+}
+
+button:hover {
+  background-color: red;
+  color: #000;
+}
+
 /* -------------- View my projects link ------------ */
 
 .view-projects {
@@ -11,6 +26,7 @@
   line-height: 2rem;
   width: fit-content;
   background-color: red;
+  display: none;
 }
 
 .back-to-top {
