@@ -3,6 +3,7 @@
   background: url("../images/Homepage_photo2.jpg") center no-repeat;
   background-size: cover;
   background-position-x: 57.5%;
+  background-position-y: 100%;
   position: relative;
   color: black;
   max-height: 1200px;
@@ -27,11 +28,6 @@ header h1{
 
 header .hi {
   font-size: 5rem;
-}
-
-.hi{
-  margin-top: 25px;
-  color: white;
 }
 
 .hi h1 {
@@ -118,4 +114,14 @@ header .hi {
     margin-bottom: 1.5rem;
   }
 
+}
+
+@media (min-width: 1200px){
+  #home header{
+    margin-bottom: 2rem;
+  }
+
+  .description {
+    max-width: 500px;
+  }
 }
