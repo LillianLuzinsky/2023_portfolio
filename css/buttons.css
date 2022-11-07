@@ -26,6 +26,7 @@
 .view-projects p, .view-link2 p, .back-link p {
   margin-right: 3rem;
   transition: all 300ms;
+  display: none;
 }
 
 .view-projects:hover p {
@@ -76,4 +77,12 @@
 
 .view-projects:hover path {
   fill: black;
+}
+
+/****** tablet ******/
+
+@media (min-width: 760px){
+  .view-projects p, .view-link2 p, .back-link p {
+    display: flex;
+  }
 }
