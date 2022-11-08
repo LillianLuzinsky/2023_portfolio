@@ -9,10 +9,19 @@
   line-height: 2rem;
   width: fit-content;
   padding-top: 1.5rem;
+  z-index: 0;
 }
 
 .view-projects a {
   color: black;
+}
+
+.view-projects p {
+  font-family: century-gothic, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0;
 }
 
 .back-to-top {
@@ -41,6 +50,7 @@
   justify-content: center;
   transition: rotate 500ms;
   margin-left: -0.5rem;
+
 }
 
 .view-projects .outer-circle {
