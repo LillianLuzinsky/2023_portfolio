@@ -24,12 +24,12 @@ window.addEventListener('scroll', ()=> {
 //fade home on scroll //
 const headerHome = document.getElementById('home');
     window.addEventListener('scroll', function(){
-      headerHome.style.opacity = 1 -+ window.pageYOffset/750+'';
+      headerHome.style.opacity = 1 -+ window.pageYOffset/1000+'';
       headerHome.style.backgroundPositionY =+ window.pageYOffset+'px';
     })
 
 const headerContent = document.getElementById('homepage');
     window.addEventListener('scroll', function(){
-      headerContent.style.opacity = 1 -+ window.pageYOffset/300+'';
+      headerContent.style.opacity = 1 -+ window.pageYOffset/400+'';
     })
 

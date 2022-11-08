@@ -10,15 +10,23 @@
   /* z-index: -1; */
 }
 
-#home .content {
+/* #home .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-bottom: none;
   background-image: none;
-  position: fixed;
   height: 100%;
-  padding-top: 0;
+  position: fixed;
+} */
+
+#home .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+
 }
 
 #home header {
@@ -78,6 +86,11 @@ header .hi {
 /***** mobile *****/
 
 @media (min-width: 350px) {
+  #home .content {
+    position: sticky;
+    top: 0;
+  }
+
   .description {
     font-size: 1rem;
     line-height: 2rem;
@@ -123,15 +136,6 @@ header .hi {
 
 @media (min-width: 1200px){
   #home header{
-    margin-top: 5%;
     margin-bottom: 2rem;
   } 
-
-  #home .content {
-    position: fixed;
-    width: 100vw;
-    margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }

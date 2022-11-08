@@ -1,3 +1,15 @@
+#contact {
+  z-index: 5;
+}
+
+#contact a {
+  color: aqua;
+  z-index: 5;
+}
+
+#contact a:hover {
+  color: pink;
+}
 
 #contact .content {
   border-bottom: none;
@@ -15,6 +27,13 @@
   width: 2.5rem;
   border-radius: 100rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.copyright {
+  color: #949494;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
 }
 
 /****** tablet ******/

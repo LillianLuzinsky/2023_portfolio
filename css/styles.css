@@ -51,6 +51,7 @@ a {
   text-decoration: none;
   color: white;
   letter-spacing: 1px;
+  cursor: pointer;
 }
  
 section {
@@ -62,7 +63,7 @@ section {
 }
 
 .content {
-  padding: 4rem 5%;
+  padding: 0 5%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -80,6 +81,7 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-top: 4.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -110,7 +112,7 @@ p {
 
 @media (min-width: 744px){
   .content {
-    padding: 10rem 3rem 6.5rem 3rem;
+    padding: 0 3rem 6.5rem 3rem;
   }
 
   h1 {
@@ -119,6 +121,7 @@ p {
   }
 
   .title {
+    padding-top: 10rem;
     margin-bottom: 5rem;
   }
   
