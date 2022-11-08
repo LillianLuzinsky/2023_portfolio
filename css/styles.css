@@ -87,6 +87,13 @@ h1 {
   height: 2.5rem;
 }
 
+.copyright, .copyright2{
+  color: #858585;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 /****** tablet ******/
 
 @media (min-width: 744px){

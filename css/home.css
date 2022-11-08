@@ -7,6 +7,7 @@
   color: black;
   max-height: 1200px;
   border-bottom: none;
+  z-index: -1;
 }
 
 #home .content {
@@ -17,6 +18,7 @@
   background-image: none;
   position: fixed;
   height: 100%;
+  z-index: -1;
 }
 
 #home header {
