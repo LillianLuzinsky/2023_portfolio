@@ -30,7 +30,6 @@ const headerHome = document.getElementById('home');
 
 const headerContent = document.getElementById('homepage');
     window.addEventListener('scroll', function(){
-      headerContent.style.opacity = 1 -+ window.pageYOffset/550+'';
-      headerContent.style.backgroundPositionY =- window.pageYOffset+'%';
+      headerContent.style.opacity = 1 -+ window.pageYOffset/350+'';
     })
 
