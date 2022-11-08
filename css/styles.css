@@ -40,6 +40,7 @@ body{
    color: white;
    width: 100vw;
    background: #222222;
+   background-color: white;
  }
  
 ul {
@@ -109,9 +110,9 @@ h1 {
   section {
     border-bottom: none;
   }
+
   .content {
     min-height: 100vh;
-    max-height: 1200px;
     padding: 8rem 0rem;
     border-bottom: 1px solid white;
   }
