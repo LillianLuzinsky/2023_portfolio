@@ -49,3 +49,98 @@
   }
 
 }
+
+#contact{
+  height: auto;
+  background: #222222;
+  animation: slide 500ms;
+}
+
+#contact .container{
+  height: 100%;
+  padding-bottom: 1.5rem;
+  border-bottom: none;
+}
+
+.contact-title{
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.contact-cross{
+  margin-left: 20px;
+  height: 2rem;
+  width: 2rem;
+  fill: none;
+  stroke: #F037A5;
+  stroke-width: 1.5px;
+  transform: rotate(45deg);
+}
+
+.contact-text{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+}
+
+.contact-item{
+  margin-bottom: 10%;
+}
+
+.follow-section{
+  display: inline;
+}
+
+/*************
+media queries
+*************/
+
+@media (min-width: 760px){
+  #contact{
+      height: 100vh;
+      position: relative;
+      background: #222222;
+      margin-bottom: 50vh;
+      padding-top: 5%;
+  }
+
+  .contact-cross{
+      height: 3.75rem;
+      width: 3.75rem;
+      margin-left: 35px;
+  }
+
+  .contact-text a{
+      font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 800px){
+
+  #contact{
+      height: auto;
+      margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: 1024px){
+
+  #contact{
+      height: 100vh;
+      margin-bottom: 65vh;
+  }
+
+  .contact-item{
+      margin-bottom: 5%;
+  }
+}
+
+
+@media (min-width: 1200px){
+  #contact{
+      padding-top: 0;
+      margin-bottom: 50vh;
+  }
+}
