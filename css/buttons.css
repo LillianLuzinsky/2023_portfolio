@@ -40,6 +40,7 @@
   align-items: center;
   justify-content: center;
   transition: rotate 500ms;
+  margin-left: -0.5rem;
 }
 
 .view-projects .outer-circle {

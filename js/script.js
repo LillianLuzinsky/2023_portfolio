@@ -24,9 +24,6 @@ window.addEventListener('scroll', ()=> {
 //fade home on scroll //
 const headerHome = document.getElementById('home');
     window.addEventListener('scroll', function(){
-      headerHome.style.opacity = 1 -+window.pageYOffset/750+'';
-      headerHome.style.backgroundPositionY =+ window.pageYOffset/2+'px';
+      headerHome.style.opacity = 1 -+ window.pageYOffset/1000+'';
+      headerHome.style.backgroundPositionY =+ window.pageYOffset+'px';
     })
-
-
-    // position: fixed;
