@@ -30,6 +30,6 @@ const headerHome = document.getElementById('home');
 
 const headerContent = document.getElementById('homepage');
     window.addEventListener('scroll', function(){
-      headerContent.style.opacity = 1 -+ window.pageYOffset/400+'';
+      headerContent.style.opacity = 1 -+ window.pageYOffset/500+'';
     })
 

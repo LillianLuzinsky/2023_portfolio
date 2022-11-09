@@ -60,6 +60,7 @@ section {
   background-color: #222;
   color: white;
   border-bottom: 1px solid white;
+  padding-bottom: 4.5rem;
 }
 
 .content {
@@ -111,8 +112,9 @@ p {
 /****** tablet ******/
 
 @media (min-width: 744px){
-  .content {
-    padding: 0 3rem 6.5rem 3rem;
+ 
+  section {
+    padding-bottom: 5rem;
   }
 
   h1 {
@@ -157,8 +159,8 @@ p {
   }
 
   .content {
-    min-height: 100vh;
-    padding: 10rem 0rem 8rem 0rem;
+    padding: 0;
+    padding-bottom: 10rem;
     border-bottom: 1px solid white;
   }
 

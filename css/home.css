@@ -7,27 +7,18 @@
   color: black;
   max-height: 1200px;
   border-bottom: none;
-  /* z-index: -1; */
-}
-
-/* #home .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: none;
-  background-image: none;
-  height: 100%;
-  position: fixed;
-} */
+  /* transition: opacity 2s ease-out; */
+}
 
 #home .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: sticky;
-  top: 0;
-
+  width: 100%;
+  border-bottom: none;
+  transition: all 400ms ease-out;
 }
+
 
 #home header {
   margin-bottom: 1rem;
@@ -86,10 +77,6 @@ header .hi {
 /***** mobile *****/
 
 @media (min-width: 350px) {
-  #home .content {
-    position: sticky;
-    top: 0;
-  }
 
   .description {
     font-size: 1rem;
@@ -137,5 +124,9 @@ header .hi {
 @media (min-width: 1200px){
   #home header{
     margin-bottom: 2rem;
-  } 
+  }
+
+  #home .content {
+    padding: 0;
+  }
 }
