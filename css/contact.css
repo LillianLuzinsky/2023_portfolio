@@ -1,15 +1,8 @@
-
-#contact a {
-  color: aqua;
-  z-index: 5;
-}
-
-#contact a:hover {
-  color: pink;
-}
-
-#contact .content{
-  border-bottom: none;
+#contact {
+  margin: 0 auto;
+  position: relative;
+  border: none;
+  max-height: 100vh;
 }
 
 .contact-half {
@@ -26,11 +19,49 @@
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+#contact .content {
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  width: 100%;
+  border: none;
+}
+
+.contact-list {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-list h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.contact-list a {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #00BCD4;
+}
+
+.contact-list a:hover {
+  color: red;
+}
+
 .copyright {
   color: #949494;
   letter-spacing: 1px;
   font-size: 0.75rem;
   line-height: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }
 
 /****** tablet ******/
@@ -53,6 +84,7 @@
   font-family: century-gothic, sans-serif;
   font-weight: 400;
   text-align: center;
+  padding-bottom: 1.5rem;
 }
 
 /****** desktop ******/
