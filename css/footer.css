@@ -1,0 +1,47 @@
+
+footer {
+  background-color: rgba(240, 55, 165, 1);
+}
+
+footer{
+  background: #F037A5;
+  color: black;
+  display: block;
+  z-index: -1;
+  width: 100vw;
+  height: auto;
+}
+
+/*************
+media queries
+*************/
+
+@media (min-width: 760px){
+  footer{
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 800px){
+
+  footer{
+    position: unset;
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px){
+  footer{
+    height: auto;
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1200px){
+  footer{
+    height: 55vh;
+  }
+}
