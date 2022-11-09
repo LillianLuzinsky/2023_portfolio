@@ -15,27 +15,37 @@
   transition: all 300ms;
 }
 
-.about-link{
-  position: relative;
+#about a{
+  
+  font-size: 1rem;
+  line-height: 2rem;
   color: #56ECFF;
   transition: all 300ms ease;
-  z-index: 1;
+  padding: 0 0.5rem;
   overflow: hidden;
+  width: 100%;
+  transition: all 1s;
+  z-index: 1;
 }
 
-.about-link:hover {
+#about a:hover {
   font-style: italic;
   overflow: hidden;
-  color: aquamarine;
+  color: #00BCD4;
+}
+
+.about-link{
+  position: relative;
 }
 
 .about-link::before {
   content: " ";
   position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.05);
   color: pink;
   z-index: 0;
   border-radius: 100px;
@@ -47,7 +57,6 @@
 .about-link:hover::before {
   transform-origin: left;
   transform: scaleX(1);
-  overflow: hidden;
 }
 
 /****** tablet ******/
