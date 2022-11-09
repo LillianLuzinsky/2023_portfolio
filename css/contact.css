@@ -50,7 +50,7 @@
   font-size: 1rem;
   line-height: 2rem;
   color: #56ECFF;
-  transition: all 1s ease;
+  transition: color 500ms;
   height: 100%;
   z-index: 1;
   padding: 0 0.5rem;
@@ -58,7 +58,6 @@
 
 .contact-list a:hover {
   font-style: italic;
-  margin-left: 0.5rem;
   color: black;
 }
 
@@ -71,16 +70,14 @@
   width: 0;
   height: 100%;
   z-index: -1;
-  transition: width 1s ease;
+  transition: width 500ms ease;
   transform: skew(-10deg, 0);
 }
 
 .contact-list a:hover::after {
   content: "";
   position: absolute;
-  background-color: #56ECFF;;
-  mix-blend-mode: difference
-  ;
+  background-color: #56ECFF;
   left: 0;
   bottom: 0;
   width: 100%;
