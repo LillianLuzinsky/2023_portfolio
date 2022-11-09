@@ -43,13 +43,16 @@
 }
 
 .contact-list a {
+  position: relative;
   font-size: 1rem;
   line-height: 2rem;
   color: #00BCD4;
+  transition: all 300ms ease;
 }
 
 .contact-list a:hover {
-  color: red;
+  font-style: italic;
+  margin-left: 1rem;
 }
 
 .copyright {
