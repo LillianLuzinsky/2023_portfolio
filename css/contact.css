@@ -61,28 +61,30 @@
   color: black;
 }
 
-.contact-list a::after {
-  content: "";
+.contact-list a::before {
+  content: " ";
   position: absolute;
-  background-color: #56ECFF;;
   left: 0;
-  bottom: 0;
-  width: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
+  background-color: #56ECFF;
   z-index: -1;
-  transition: width 500ms ease;
-  transform: skew(-10deg, 0);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms, background-color 1s;
 }
 
-.contact-list a:hover::after {
+.contact-list a:hover::before {
   content: "";
   position: absolute;
   background-color: #56ECFF;
   left: 0;
-  bottom: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  transform: scaleX(1) skew(-10deg, 0);
+  transform-origin: left;
 }
 
 .copyright {
