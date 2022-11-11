@@ -1,6 +1,7 @@
 .scroll-progress {
   width: 0;
   background: #00BCD4;
+  background-color: #F037A5;
   height: 2px;
   position: fixed;
   top: 3rem;
@@ -8,3 +9,13 @@
   z-index: 3;
 }
 
+/****** tablet ******/
+
+@media (min-width: 744px) {
+
+  .scroll-progress {
+    top: 4.5rem;
+    height: 3px;
+  }
+
+}
