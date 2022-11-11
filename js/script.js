@@ -1,3 +1,19 @@
+//progress-bar on scroll//
+const scrollProgressElement = document.querySelector('#scroll-progress');
+
+function scrollProgress() {
+  const PageTotalHeight = document.body.scrollHeight;
+  const currentDistantFromTop = document.documentElement.scrollTop;
+
+  const windowHeight = document.documentElement.clientHeight;
+
+  const scrolledPercentage = (currentDistantFromTop / (PageTotalHeight - windowHeight)) * 100;
+
+  scrollProgressElement.style.width = Math.round(scrolledPercentage) + '%';
+}
+
+document.addEventListener('scroll', scrollProgress);
+
 //activate nav-links on click and scroll//
 
 const sections = document.querySelectorAll('section');

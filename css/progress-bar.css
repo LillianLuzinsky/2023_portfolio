@@ -1,26 +1,10 @@
-.progress-container {
-  width: 100%;
+.scroll-progress {
+  width: 0;
+  background: #00BCD4;
   height: 2px;
   position: fixed;
-  z-index: 2;
-  margin-top: 3rem;
+  top: 3rem;
+  left: 0;
+  z-index: 3;
 }
 
-.progress-bar {
-  height: 2px;
-  background: #F037A5;
-  width: 0%;
-}
-
-
-@media (min-width: 744px){
-  .progress-container{
-      margin-top: 4.5rem;
-      height: 3px;
-  }
-
-  .progress-bar{
-      height: 3px;
-  }
-
-}
