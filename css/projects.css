@@ -20,6 +20,17 @@
   background-color: rgba(0, 188, 212, 0.5);
 }
 
+.portfolio-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.portfolio-text .bold {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
 /****** masonry layout *****/
 
 .project-thumbnails {
@@ -159,6 +170,10 @@
   .project-thumbnails {
     grid-template-columns: 1fr 1fr;
   }
+
+  .portfolio-text {
+    gap: 3rem;
+  }
 }
 
 /****** desktop ******/
@@ -174,6 +189,11 @@
     height: 6rem;
     width: 6rem;
     border: 2px solid rgba(240, 55, 165, 0.5);
+  }
+
+  .portfolio-text {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
   }
   
   .project-thumbnails {
