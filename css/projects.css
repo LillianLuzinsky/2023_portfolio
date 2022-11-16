@@ -164,6 +164,7 @@
 
   .project-thumbnails {
     grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
   }
 
   .portfolio-text {
