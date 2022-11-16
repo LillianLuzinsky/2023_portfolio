@@ -20,6 +20,127 @@
   background-color: rgba(0, 188, 212, 0.5);
 }
 
+/****** masonry layout *****/
+
+.project-thumbnails {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 200px;
+  gap: 4rem;
+  
+}
+
+.project-thumbnails .short {
+  grid-row: span 2;
+}
+
+.project-thumbnails .tall {
+  grid-row: span 3;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.project-thumbnails a {
+  text-decoration: none;
+  color: white;
+}
+
+.thumbnail-image {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-radius: 1.5rem;
+  max-height: 350px;
+}
+
+.thumbnail img{
+  width: 100%;
+  transition: all 300ms ease;
+  opacity: 1;
+  border-radius: 1.5rem;
+}
+
+.tall .thumbnail-image{
+  max-height: 85%;
+  padding: 0;
+}
+
+.thumbnail:hover img {
+  transform: scale(1.05);
+  opacity: 0.5;
+}
+
+.thumbnail-text {
+  position: absolute;
+  z-index: 1;
+  bottom: 0.5rem;
+  transition: all 300ms ease-out;
+}
+
+.thumbnail:hover .thumbnail-text {
+  bottom: 1rem;
+}
+
+.thumbnail h2 {
+  font-family: century-gothic, sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  width: 5rem;
+  height: 4rem;
+  margin-bottom: 0;
+  text-align: center;
+  transition: all 300ms ease-out;
+  text-shadow: 7.5px 7.5px 20px rgba(0, 0, 0, 0.75);
+}
+
+.thumbnail:hover h2 {
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0);
+}
+
+.thumbnail-text2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.shape {
+  height: 2.5rem;
+  width: 5rem;
+  background-color: #00BCD4;
+  opacity: 0.5;
+  border-radius: 0 0 10rem 10rem;
+  margin-top: 1rem;
+  transition: all 500ms ease-out;
+}
+
+.tall .shape {
+  background-color: #F037A5;
+}
+
+.thumbnail:hover .shape {
+  opacity: 1;
+}
+
+.thumbnail p {
+  grid-column: span 2;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
+  transition: skew 300ms;
+}
+
+.thumbnail:hover p {
+  transform: skew(-3deg, 0deg); 
+}
+
+
+/* main .thumbnail:last-child {
+  visibility: hidden;
+} */
+
 /****** tablet ******/
 
 @media (min-width: 744px){
