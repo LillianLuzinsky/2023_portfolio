@@ -53,6 +53,7 @@
   color: white;
 }
 
+
 .thumbnail-image {
   width: 100%;
   max-width: 280px;
@@ -82,6 +83,10 @@
 
 .tall .thumbnail-text {
   top: 15rem;
+}
+
+.thumbnail:hover .thumbnail-text {
+  margin-top: -0.5rem;
 }
 
 .thumbnail h2 {
@@ -133,6 +138,11 @@
 
 /****** mobile ******/ 
 @media (min-width: 350px){
+
+  .thumbnail-image {
+    max-width: 100%;
+  }
+
   .thumbnail p {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -141,7 +151,7 @@
   .thumbnail-text {
     top: 15rem;
   }
-
+  
 }
 
 /****** tablet ******/
@@ -212,17 +222,14 @@
   }
   
   .thumbnail-text {
-    top: 17.5rem;
+    top: 18rem;
   }
 
   .tall .thumbnail-text {
     top: 36rem
   }
-  
-  .thumbnail:hover .thumbnail-text {
-    bottom: 2.25rem;
-  }
-  
+
+
   .thumbnail h2 {
     font-family: century-gothic, sans-serif;
     font-weight: 700;
@@ -271,20 +278,26 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .portfolio-text {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
 
   .project-thumbnails {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 75px;
   }
 
   .short .thumbnail-text {
     top: 19rem;
   }
-  
 }
 
+/****** desktop ******/
+
+@media (min-width: 1200px){
+  .project-thumbnails {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
