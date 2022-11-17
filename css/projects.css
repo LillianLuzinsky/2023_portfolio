@@ -204,23 +204,11 @@
     max-height: 350px;
   }
   
-  .thumbnail img{
-    width: 100%;
-    transition: all 300ms ease;
-    opacity: 1;
-    border-radius: 1.5rem;
-  }
-  
   .tall .thumbnail-image{
     max-height: 80%;
     padding: 0;
   }
-  
-  .thumbnail:hover img {
-    transform: scale(1.05);
-    opacity: 0.5;
-  }
-  
+
   .thumbnail-text {
     top: 18rem;
   }
@@ -231,15 +219,9 @@
 
 
   .thumbnail h2 {
-    font-family: century-gothic, sans-serif;
-    font-weight: 700;
     font-size: 4rem;
     width: 5rem;
     height: 4rem;
-    margin-bottom: 0;
-    text-align: center;
-    transition: all 300ms ease-out;
-    text-shadow: 7.5px 7.5px 20px rgba(0, 0, 0, 0.75);
   }
   
   .thumbnail:hover h2 {
