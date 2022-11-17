@@ -132,9 +132,9 @@
 }
 
 
-/* main .thumbnail:last-child {
-  visibility: hidden;
-} */
+main .invisible{
+  display: none;
+}
 
 /****** mobile ******/ 
 @media (min-width: 350px){
