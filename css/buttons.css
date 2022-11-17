@@ -1,3 +1,6 @@
+
+/**** view projects link *****/
+
 .view-projects {
   display: flex;
   flex-direction: row;
@@ -28,12 +31,12 @@
   padding: 0;
 }
 
-.view-projects:hover, .view-link2:hover, .back-link:hover, .back-to-top:hover{
+.view-projects:hover{
   cursor: pointer;
 }
 
-.view-projects p, .view-link2 p, .back-link p {
-  margin-right: 3rem;
+.view-projects p {
+  margin-right: 3.5rem;
   transition: all 300ms;
   display: none;
 }
@@ -99,7 +102,7 @@
     padding-left: 0;
   }
   
-  .view-projects p, .view-link2 p, .back-link p {
+  .view-projects p {
     display: flex;
   }
 
@@ -122,5 +125,73 @@
     height: 3.25rem;
     transform: rotate(0);
   }
+}
 
+
+/**** view all button *****/
+
+.tablet {
+  display: none;
+}
+
+.view-all {
+  border: none;
+  background: none;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.view-all p {
+  color: white;
+  display: flex;
+  margin-right: 1.5rem;
+}
+
+.view-all:hover p {
+  color: white;
+}
+
+.view-all path {
+  fill: white;
+}
+
+.view-all .icon .outer-circle {
+  border: 2.5px solid white;
+}
+
+.view-all:hover .icon .inner-circle {
+  background-color: white;
+}
+
+/****** tablet ******/
+
+@media (min-width: 744px){
+
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: flex;
+  }
+
+  .view-all {
+    align-items: center;
+  }
+
+  .view-all .icon .outer-circle {
+    border: 5px solid white;
+  }
+
+  .view-all p {
+    margin-right: 3.5rem;
+  }
+}
+
+/****** desktop ******/
+
+@media (min-width: 1200px) {
+  .view-all {
+    align-items: flex-end;
+  }
 }

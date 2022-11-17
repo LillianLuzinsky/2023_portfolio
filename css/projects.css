@@ -131,13 +131,10 @@
   transform: skew(-3deg, 0deg); 
 }
 
-/* .thumbnail:nth-child(6){
-  visibility: hidden;
-}
 
 main .invisible{
   display: none;
-} */
+}
 
 /****** mobile ******/ 
 @media (min-width: 350px){
