@@ -60,3 +60,11 @@ link.addEventListener("click", (e) => {
     window.location = link.href;
   }, 900);
 });
+
+//adding smooth scroll to only a few elements //
+
+function smoothScroll(){
+  document.querySelector('.content').scrollIntoView({
+      behavior: 'smooth'
+  });
+}

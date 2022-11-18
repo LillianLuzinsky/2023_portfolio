@@ -56,3 +56,7 @@
     top: 0;
   }
 }
+/* 
+html .project-page .auto-scroll {
+  scroll-behavior: auto;
+} */
