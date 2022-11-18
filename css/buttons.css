@@ -166,9 +166,9 @@
 
 @media (min-width: 744px){
 
-  .mobile {
+  /* .mobile {
     display: none;
-  }
+  } */
 
   .tablet {
     display: flex;
