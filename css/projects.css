@@ -20,18 +20,6 @@
   background-color: rgba(0, 188, 212, 0.5);
 }
 
-.portfolio-text {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.portfolio-text .bold {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
 /****** masonry layout *****/
 
 .project-thumbnails {
@@ -261,7 +249,7 @@ main .invisible{
 }
 
 @media (min-width: 1024px) {
-  .portfolio-text {
+  .main-text  {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
