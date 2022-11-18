@@ -141,7 +141,7 @@
 }
 
 .view-all p, .go-back p {
-  color: white;
+  color: #BBBBBB;
   display: flex;
   margin-right: 1.5rem;
 }
@@ -151,11 +151,11 @@
 }
 
 .view-all path, .go-back path {
-  fill: white;
+  fill: #BBBBBB;
 }
 
 .view-all .icon .outer-circle, .go-back .icon .outer-circle {
-  border: 2.5px solid white;
+  border: 2.5px solid #BBBBBB;
 }
 
 .view-all:hover .icon .inner-circle, .go-back:hover .icon .inner-circle {
@@ -180,7 +180,7 @@
   }
 
   .view-all .icon .outer-circle, .go-back .icon .outer-circle {
-    border: 5px solid white;
+    border: 5px solid #BBBBBB;
   }
 
   .view-all p, .go-back p {
