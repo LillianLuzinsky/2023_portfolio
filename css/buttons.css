@@ -198,24 +198,46 @@
 
 /***** go-back button *****/
 
+.go-back {
+  padding-top: 0;
+}
+
+.go-back p {
+  display: none;
+}
+
 .arrow-back {
   height: 1.5rem;
   z-index: 2;
 }
 
 .go-back .icon .arrow-back{
-  rotate: 180deg;
+  rotate: 90deg;
 }
 
-.go-back:hover .icon {
-  rotate: -90deg;
-}
+
 
 /****** tablet ******/
 
 @media (min-width: 744px){
 
+  .go-back a{
+    padding: 0;
+  }
+
+  .go-back p {
+    display: flex;
+  }
+
   .arrow-back {
     height: 3.25rem;
+  }
+
+  .go-back .icon .arrow-back{
+    rotate: 180deg;
+  }
+  
+  .go-back:hover .icon {
+    rotate: -90deg;
   }
 }
