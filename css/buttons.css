@@ -82,7 +82,6 @@
   width: 2.5rem;
   background-color: rgba(0, 188, 212, 0.5);
   border-radius: 500px;
-  mix-blend-mode: multiply;
 }
 
 .view-projects:hover path {
@@ -92,6 +91,7 @@
 .arrow {
   height: 1.5rem;
   transform: rotate(90deg);
+  z-index: 2;
 }
 
 /****** tablet ******/
@@ -138,7 +138,6 @@
   border: none;
   background: none;
   margin: 1.5rem auto;
-  background-color: pink;
 }
 
 .view-all p, .go-back p {
@@ -161,15 +160,16 @@
 
 .view-all:hover .icon .inner-circle, .go-back:hover .icon .inner-circle {
   background-color: white;
+  mix-blend-mode: lighten;
 }
 
 /****** tablet ******/
 
 @media (min-width: 744px){
 
-  /* .mobile {
+  .mobile {
     display: none;
-  } */
+  }
 
   .tablet {
     display: flex;
@@ -200,6 +200,7 @@
 
 .arrow-back {
   height: 1.5rem;
+  z-index: 2;
 }
 
 .go-back .icon .arrow-back{
