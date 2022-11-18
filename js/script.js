@@ -49,3 +49,14 @@ const headerContent = document.getElementById('homepage');
       headerContent.style.opacity = 1 -+ window.pageYOffset/500+'';
     })
 
+
+ //page slide animation //
+ const slide = document.querySelector(".slide");
+const transition = document.querySelector(".transition");
+slide.addEventListener("click", (e) => {
+  e.preventDefault();
+  transition.classList.add("slide");
+  setTimeout(() => {
+    window.location = slide.href;
+  }, 900);
+});

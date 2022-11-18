@@ -1,0 +1,23 @@
+
+.transition.slide .cover1 {
+  background-color: skyblue;
+  animation: slide 0.3s ease-in-out forwards;
+}
+.transition.slide .cover2 {
+  background-color: teal;
+  animation: slide 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+.transition.slide .cover3 {
+  background-color: #094992;
+  animation: slide 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+@keyframes slide {
+  from {
+    left: -100vw;
+  }
+  to {
+    left: 0;
+  }
+}
