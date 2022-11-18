@@ -128,37 +128,38 @@
 }
 
 
-/**** view all button *****/
+/**** view all and go back button *****/
 
 .tablet {
   display: none;
 }
 
-.view-all {
+.view-all, .go-back {
   border: none;
   background: none;
   margin: 1.5rem auto;
+  background-color: pink;
 }
 
-.view-all p {
+.view-all p, .go-back p {
   color: white;
   display: flex;
   margin-right: 1.5rem;
 }
 
-.view-all:hover p {
+.view-all:hover p, .go-back:hover p {
   color: white;
 }
 
-.view-all path {
+.view-all path, .go-back path {
   fill: white;
 }
 
-.view-all .icon .outer-circle {
+.view-all .icon .outer-circle, .go-back .icon .outer-circle {
   border: 2.5px solid white;
 }
 
-.view-all:hover .icon .inner-circle {
+.view-all:hover .icon .inner-circle, .go-back:hover .icon .inner-circle {
   background-color: white;
 }
 
@@ -178,11 +179,11 @@
     align-items: center;
   }
 
-  .view-all .icon .outer-circle {
+  .view-all .icon .outer-circle, .go-back .icon .outer-circle {
     border: 5px solid white;
   }
 
-  .view-all p {
+  .view-all p, .go-back p {
     margin-right: 3.5rem;
   }
 }
@@ -192,5 +193,28 @@
 @media (min-width: 1200px) {
   .view-all {
     align-items: flex-end;
+  }
+}
+
+/***** go-back button *****/
+
+.arrow-back {
+  height: 1.5rem;
+}
+
+.go-back .icon .arrow-back{
+  rotate: 180deg;
+}
+
+.go-back:hover .icon {
+  rotate: -90deg;
+}
+
+/****** tablet ******/
+
+@media (min-width: 744px){
+
+  .arrow-back {
+    height: 3.25rem;
   }
 }
