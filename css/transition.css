@@ -25,3 +25,34 @@
   top: 0;
   animation: slideUp 500ms ease-out;
 }
+
+.transition {
+  width: 100vw;
+}
+
+.cover {
+  margin: auto;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 100vh;
+  z-index: 1000;
+}
+.transition.slide .cover1 {
+  background-color: #00BCD4;
+  animation: slide 500ms ease-in-out forwards;
+}
+.transition.slide .cover2 {
+  background-color: #222;
+  animation: slide 500ms ease-in-out forwards;
+  animation-delay: 500ms;
+}
+
+@keyframes slide {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0;
+  }
+}
