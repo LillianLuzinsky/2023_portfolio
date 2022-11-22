@@ -69,7 +69,7 @@ section {
   min-height: 100vh;
   background-color: #222;
   color: white;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ABABAB;
   padding-bottom: 4.5rem;
 }
 
@@ -80,7 +80,7 @@ section {
 }
 
 .header {
-  border-bottom: solid 0.5px #BBBBBB;
+  border-bottom: solid 0.5px #9b9b9b;
   margin-bottom: 1.5rem;
 }
 
@@ -113,7 +113,7 @@ h1 {
   font-size: 1.5rem;
   line-height: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #BBBBBB;
+  color: #ABABAB;
  }
 
  h3 {
@@ -162,13 +162,13 @@ p {
   }
 
   .header {
-    border-bottom: solid 1px #BBBBBB;
-    margin-bottom: 2.5rem;
+    border-bottom: solid 1px #ABABAB;
+    margin-bottom: 4rem;
   }
 
   .title {
     padding-top: 10rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
   
   .title-icons {
@@ -182,7 +182,8 @@ p {
 
   h2 {
     font-size: 3rem;
-    line-height: 4.5rem;
+    line-height: 5.5rem;
+    margin-bottom: 4rem;
   }
 
   h3 {
@@ -214,11 +215,10 @@ p {
   .content {
     padding: 0;
     padding-bottom: 10rem;
-    border-bottom: 1px solid white;
   }
 
   .header {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
 
   .title {
@@ -235,8 +235,7 @@ p {
   }
 
   h2 {
-    font-size: 4rem;
-    line-height: 6rem;
+    margin-bottom: 5rem;
   }
 
 }
