@@ -124,7 +124,6 @@
   color: white;
 }
 
-
 .thumbnail-image {
   position: relative;
   width: 100%;
@@ -168,7 +167,7 @@
 }
 
 .tall .thumbnail-text {
-  top: 15rem;
+  top: 16rem;
 }
 
 .thumbnail:hover .thumbnail-text {
