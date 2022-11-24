@@ -22,6 +22,11 @@
 
 /****** top-pick thumbnail *****/
 
+.top-pick {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 .big-thumb {
   position: relative;
   max-width: 1200px;
@@ -105,6 +110,8 @@
   grid-auto-rows: 400px;
   grid-row: span 2;
   gap: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .thumbnail {
@@ -236,6 +243,10 @@
 /****** tablet ******/
 
 @media (min-width: 744px){
+
+  /* .mobile {
+    display: none;
+  } */
 
   .projects-half {
     height: 5rem;
