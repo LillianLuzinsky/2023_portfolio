@@ -24,9 +24,9 @@
 
 .big-thumbnail {
   width: 100%;
-  height: 500px;
+  height: 550px;
   overflow: hidden;
-  margin-bottom: 5rem;
+  margin-bottom: 3.5rem;
   transition: all 300ms ease;
   border-radius: 25px;
   background-color: blue;
@@ -68,11 +68,23 @@
   position: absolute;
   display: flex;
   left: 0;
-  bottom: 0;
+  bottom: 0.75rem;
+  transition: all 300ms ease;
 }
+
 
 .big-num {
   margin-right: 2.5rem;
+  margin-top: 0.5rem;
+  transition: all 300ms ease;
+}
+
+.big-thumbnail:hover .big-num {
+  margin-top: 0rem;
+}
+
+.big-thumbnail:hover .shape {
+  opacity: 1;
 }
 
 .big-num h2 {
@@ -92,25 +104,40 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 0.75rem;
+  line-height: 1.25rem;
 }
 
 .big-description {
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
 }
+
 
 .read-more {
   display: flex;
   flex-direction: row;
   align-items: center;
   color: #00DEEC;
+  transition: all 300ms ease;
 }
 
+.read-more p {
+  transform: skew(0deg, 0deg);
+}
 .read-more svg {
   width: 1.5rem;
   margin-left: 1rem;
+  transition: all 300ms ease;
 }
 
+.big-thumbnail:hover .read-more p {
+  transform: skew(-10deg, 0deg);
+}
+
+.big-thumbnail:hover .read-more svg {
+  margin-left: 1.25rem;
+}
 
 @media (min-width: 1024px){
   .big-image {
