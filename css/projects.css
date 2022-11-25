@@ -71,7 +71,6 @@
   transition: all 300ms ease;
 }
 
-
 .big-num {
   margin-right: 2.5rem;
   margin-top: 0.5rem;
@@ -112,7 +111,6 @@
   margin-top: 5rem;
 }
 
-
 .read-more {
   display: flex;
   flex-direction: row;
@@ -137,21 +135,6 @@
 .big-thumbnail:hover .read-more svg {
   margin-left: 1.25rem;
 }
-
-@media (min-width: 1024px){
-  .big-image {
-    max-height: 500px;
-  }
-}
-
-@media (min-width: 1200px){
-  .big-image {
-    max-height: 675px;
-  }
-}
-
-
-
 
 /****** masonry layout *****/
 
@@ -290,7 +273,6 @@
   .thumbnail-text {
     top: 16rem;
   }
-  
 }
 
 /****** tablet ******/
@@ -301,6 +283,10 @@
     display: none;
   }
 
+  .top-pick {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 
   .projects-half {
     height: 5rem;
@@ -404,6 +390,16 @@
 }
 
 @media (min-width: 1024px) {
+
+  .big-image {
+    max-height: 500px;
+  }
+
+  .big-text {
+    left: 1.5rem;
+    bottom: 3.5rem;
+  }
+
   .main-text  {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -422,6 +418,20 @@
 /****** desktop ******/
 
 @media (min-width: 1200px){
+  .big-thumbnail {
+    height: 675px;
+    margin-bottom: 5.5rem;
+  }
+
+  .big-image {
+    max-height: 675px;
+  }
+
+  .big-text {
+    left: 1.5rem;
+    bottom: 1.5rem;
+  }
+
   .project-thumbnails {
     grid-template-columns: 1fr 1fr 1fr;
   }
