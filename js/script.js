@@ -51,9 +51,9 @@ const headerContent = document.getElementById('homepage');
 
 
  //page slide animation //
- const link = document.querySelector(".link2");
-const transition = document.querySelector(".transition");
-link.addEventListener("click", (e) => {
+  const link = document.querySelector(".link2");
+  const transition = document.querySelector(".transition");
+  link.addEventListener ("click", (e) => {
   e.preventDefault();
   transition.classList.add("slide");
   setTimeout(() => {
