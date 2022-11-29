@@ -162,7 +162,7 @@ p {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     line-height: 6rem;
   }
 
@@ -178,8 +178,8 @@ p {
   }
 
   p {
-    font-size: 1.25rem;
-    line-height: 2.5rem;
+    font-size: 1.125rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -224,6 +224,11 @@ p {
 
   h2 {
     margin-bottom: 5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
   }
 
 }

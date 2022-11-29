@@ -104,17 +104,19 @@
   
   .view-projects p {
     display: flex;
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
 
   .view-projects .outer-circle {
-    height: 95px;
-    width: 95px;
-    border: 5px solid #00BCD4;
+    height: 4.5rem;
+    width: 4.5rem;
+    border: 3.5px solid #00BCD4;
   }
 
   .view-projects:hover .inner-circle {
-    height: 100px;
-    width: 100px;
+    height: 4.5rem;
+    width: 4.5rem;
   }
 
   .view-projects:hover .icon {
@@ -122,10 +124,36 @@
   }
 
   .arrow {
-    height: 3.25rem;
+    height: 2.25rem;
     transform: rotate(0);
   }
 }
+
+/****** desktop ******/ 
+@media (min-width: 1500px){
+
+  .view-projects p {
+    font-size: 1.5rem;
+  }
+
+  .arrow {
+    height: 3rem;
+  }
+
+  .view-projects .outer-circle {
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    border: 5px solid #00BCD4;
+  }
+
+  .view-projects:hover .inner-circle {
+    height: 6rem;
+    width: 6rem;
+  }
+
+}
+
 
 
 /**** view all and go back button *****/
