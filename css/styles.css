@@ -153,8 +153,8 @@ p {
   }
 
   .title {
-    padding-top: 10rem;
-    margin-bottom: 4rem;
+    padding-top: 6rem;
+    margin-bottom: 3rem;
   }
   
   .title-icons {
@@ -193,7 +193,7 @@ p {
 
 /****** laptop ******/ 
 @media (min-width: 1200px){
-  
+
   .content {
     padding: 0;
   }
