@@ -103,6 +103,8 @@
   .project-title {
     padding-top: 6.5rem;
     margin-bottom: 3rem;
+    font-size: 4.5rem;
+    line-height: 6rem;
   }
   
   .pagination {
@@ -127,5 +129,13 @@
   .small-icon svg {
     height: 1.5rem;
   }
+}
 
+/***** desktop *****/
+
+@media (min-width: 1500px){
+  .project-title h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
 }
