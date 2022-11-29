@@ -191,6 +191,14 @@ p {
   }
 }
 
+/****** laptop ******/ 
+@media (min-width: 1200px){
+  
+  .content {
+    padding: 0;
+  }
+}
+
 /****** desktop ******/
 
 @media (min-width: 1500px){

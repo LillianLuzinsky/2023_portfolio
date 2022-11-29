@@ -111,7 +111,7 @@
   .view-projects .outer-circle {
     height: 4.5rem;
     width: 4.5rem;
-    border: 3.5px solid #00BCD4;
+    border: 4px solid #00BCD4;
   }
 
   .view-projects:hover .inner-circle {
