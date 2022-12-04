@@ -192,6 +192,10 @@ p {
     font-size: 1.125rem;
     line-height: 2.25rem;
   }
+
+  .main-text {
+    margin-bottom: 4.5rem;
+  }
 }
 
 @media (min-width: 1024px){

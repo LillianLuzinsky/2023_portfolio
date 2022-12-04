@@ -1,3 +1,6 @@
+.project-page {
+ border-bottom: none;
+}
 
 .project-title {
   display: flex;
@@ -9,13 +12,13 @@
   letter-spacing: 1px;
 }
 
-.project-title .contact-half {
-  background-color: #00DEEC;
-  margin-right: 0.5rem;
-}
-
 .number {
   display: flex;
+  
+}
+
+.number h1 {
+  margin-left: 1rem;
 }
 
 .pagination {
@@ -96,6 +99,17 @@
   transform: rotate(180deg);
 }
 
+.project-image {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+}
+
+.project-image:last-child {
+  margin-bottom: 0;
+}
+
 /***** tablet  *****/
 
 @media (min-width: 744px){
@@ -129,6 +143,11 @@
   .small-icon svg {
     height: 1.5rem;
   }
+
+  .project-image {
+    border-radius: 15px;
+    margin-bottom: 4rem;
+  }
 }
 
 /***** desktop *****/
@@ -137,5 +156,10 @@
   .project-title h1 {
     font-size: 6rem;
     line-height: 5rem;
+  }
+
+  .project-image {
+    border-radius: 25px;
+    margin-bottom: 6rem;
   }
 }
