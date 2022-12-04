@@ -52,7 +52,7 @@
   align-items: center;
   justify-content: center;
   transition: rotate 500ms;
-  margin-left: -0.5rem;
+  margin-left: -1rem;
 
 }
 
@@ -130,7 +130,13 @@
 }
 
 /****** desktop ******/ 
+
 @media (min-width: 1500px){
+
+  .view-projects .icon {
+    margin-left: 0.5rem;
+
+  }
 
   .view-projects p {
     font-size: 1.5rem;
@@ -220,6 +226,8 @@
 /****** desktop ******/
 
 @media (min-width: 1200px) {
+
+
   .view-all {
     align-items: flex-end;
   }
