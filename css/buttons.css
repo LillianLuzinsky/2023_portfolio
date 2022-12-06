@@ -27,10 +27,6 @@
   letter-spacing: 0;
 }
 
-.back-to-top {
-  padding: 0;
-}
-
 .view-projects:hover{
   cursor: pointer;
 }
@@ -164,120 +160,76 @@
 
 }
 
+/****** back to top button *****/
 
-/**** view all and go back button *****/
-
-.tablet {
-  display: none;
+.scrollTop {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease;
+  z-index: 20;
 }
 
-.view-all, .go-back {
-  border: none;
-  background: none;
-  margin: 1.5rem auto;
-  display: none;
+.scrollTop.active {
+  visibility: visible;
+  opacity: 1;
 }
 
-.view-all p, .go-back p {
-  color: #BBBBBB;
-  display: flex;
-  margin-right: 1.5rem;
-}
-
-.view-all:hover p, .go-back:hover p {
-  color: white;
-}
-
-.view-all path, .go-back path {
-  fill: #BBBBBB;
-}
-
-.view-all .icon .outer-circle, .go-back .icon .outer-circle {
-  border: 2.5px solid #BBBBBB;
-}
-
-.view-all:hover .icon .inner-circle, .go-back:hover .icon .inner-circle {
-  background-color: white;
-  mix-blend-mode: lighten;
-}
-
-/****** tablet ******/
-
-@media (min-width: 744px){
-
-  .mobile {
-    display: none;
-  }
-
-  .tablet {
-    display: flex;
-  }
-
-  .view-all {
-    align-items: center;
-  }
-
-  .view-all .icon .outer-circle, .go-back .icon .outer-circle {
-    border: 5px solid #BBBBBB;
-  }
-
-  .view-all p, .go-back p {
-    margin-right: 3.5rem;
-  }
-}
-
-/****** desktop ******/
-
-@media (min-width: 1200px) {
-
-
-  .view-all {
-    align-items: flex-end;
-  }
-}
-
-/***** go-back button *****/
-
-.go-back {
-  padding-top: 0;
-}
-
-.go-back p {
-  display: none;
-}
-
-.arrow-back {
+.top {
+  rotate: -90deg;
+  width: 1.5rem;
   height: 1.5rem;
-  z-index: 2;
+  fill: #ABABAB;
 }
 
-.go-back .icon .arrow-back{
-  rotate: 90deg;
+.top-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: rgba(255, 255, 255, 0.075);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 10rem;
+  transition: background-color 300ms;
+  overflow: hidden;
 }
 
-
-
-/****** tablet ******/
-
-@media (min-width: 744px){
-
-  .go-back a{
-    padding: 0;
-  }
-
-  .go-back p {
-    display: flex;
-  }
-
-  .arrow-back {
-    height: 3.25rem;
-  }
-
-  .go-back .icon .arrow-back{
-    rotate: 180deg;
-  }
-  
-  .go-back:hover .icon {
-    rotate: -90deg;
-  }
+.top-icon:hover{
+  background-color: pink;
 }
+
+.top-icon:hover path {
+  fill: black;
+}
+/* 
+.top::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  z-index: 10;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 300ms, background-color 300ms;
+}
+
+.top-icon:hover::before {
+  content: " ";
+  position: absolute;
+  transform-origin: left;
+  transform: scaleX(1);
+  background-color: white;
+} */
+

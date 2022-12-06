@@ -68,3 +68,9 @@ function smoothScroll(){
       behavior: 'smooth'
   });
 }
+
+//back to top button fade in//
+window.addEventListener('scroll', function(){
+  let scroll = document.querySelector('.scrollTop');
+  scroll.classList.toggle("active", window.scrollY > 500)
+})
