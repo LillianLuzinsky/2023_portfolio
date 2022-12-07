@@ -14,6 +14,19 @@ function scrollProgress() {
 
 document.addEventListener('scroll', scrollProgress);
 
+
+//back to top button scroll//
+
+window.addEventListener('scroll', function(){
+  let scroll = document.querySelector('.scrollTop');
+  scroll.classList.toggle("active", window.scrollY > 500)
+})
+
+function scrollToTop(){
+  window.scrollTo(0, 0);
+}
+
+
 //activate nav-links on click and scroll//
 
 const sections = document.querySelectorAll('section');
@@ -50,27 +63,7 @@ const headerContent = document.getElementById('homepage');
     })
 
 
- //page slide animation //
-  const link = document.querySelector(".link2");
-  const transition = document.querySelector(".transition");
-  link.addEventListener ("click", (e) => {
-  e.preventDefault();
-  transition.classList.add("slide");
-  setTimeout(() => {
-    window.location = link.href;
-  }, 900);
-});
-
 //adding smooth scroll to only a few elements //
 
-function smoothScroll(){
-  document.querySelector('.content').scrollIntoView({
-      behavior: 'smooth'
-  });
-}
 
-//back to top button fade in//
-window.addEventListener('scroll', function(){
-  let scroll = document.querySelector('.scrollTop');
-  scroll.classList.toggle("active", window.scrollY > 500)
-})
+
