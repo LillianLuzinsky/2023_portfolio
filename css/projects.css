@@ -308,10 +308,6 @@
     gap: 3rem;
   }
 
-  .bold {
-    font-size: 1.5rem;
-  }
-
   .project-thumbnails {
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 225px;

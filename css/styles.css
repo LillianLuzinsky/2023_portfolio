@@ -148,7 +148,7 @@ p {
 /****** mobile ******/ 
 
 @media (min-width: 350px){
-  p {
+  p, li {
    font-size: 1rem;
    line-height: 2rem;
   }
@@ -188,7 +188,7 @@ p {
     line-height: 3rem;
   }
 
-  p {
+  p, li {
     font-size: 1.125rem;
     line-height: 2.25rem;
   }
@@ -246,10 +246,12 @@ p {
   }
 
   h2 {
+    font-size: 4rem;
+    line-height: 6.5rem;
     margin-bottom: 5rem;
   }
 
-  p {
+  p, li {
     font-size: 1.25rem;
     line-height: 2.5rem;
   }
