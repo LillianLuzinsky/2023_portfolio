@@ -14,7 +14,7 @@
   flex-direction: column;
 }
 
-#about a{
+/* #about a{
   letter-spacing: 1px;
   color: #56ECFF;
   width: 100%;
@@ -27,7 +27,7 @@
 #about a:hover {
   color: black;
   font-style: italic;
-}
+} */
 
 .about-link{
   position: relative;

@@ -42,6 +42,11 @@ body{
    background-color: #00BCD4;
    background-color: #222;
  }
+
+.none {
+  opacity: 0;
+  pointer-events: none;
+}
  
 ul {
   list-style: none;
@@ -122,6 +127,21 @@ p {
 
 .column p {
   margin-bottom: 1.5rem;
+}
+
+.column a {
+  letter-spacing: 1px;
+  color: #56ECFF;
+  width: 100%;
+  transition: color 500ms;
+  z-index: 1;
+  padding: 0 0.5rem;
+  white-space: nowrap;
+}
+
+.column a:hover {
+  color: black;
+  font-style: italic;
 }
 
 .main-text {
