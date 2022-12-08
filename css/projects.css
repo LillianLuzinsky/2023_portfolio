@@ -20,6 +20,10 @@
   background-color: rgba(0, 188, 212, 0.5);
 }
 
+.tablet {
+  display: none;
+}
+
 /****** big thumbnail *****/
 
 .big-thumbnail {
@@ -283,6 +287,10 @@
     display: none;
   }
 
+  .tablet {
+    display: flex;
+  }
+
   .top-pick {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -340,13 +348,14 @@
   }
 
   .tall .thumbnail-text {
-    top: 36rem
+    top: 35.5rem
   }
 
   .thumbnail h2, .big-num h2 {
     font-size: 4rem;
     width: 5rem;
     height: 4rem;
+    margin-bottom: 1rem;
   }
   
   .thumbnail:hover h2 {
@@ -407,7 +416,7 @@
   }
 
   .short .thumbnail-text {
-    top: 19rem;
+    top: 18.5rem;
   }
 }
 
