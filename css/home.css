@@ -111,6 +111,10 @@ header .hi {
     margin-top: -30px;
   }
 
+  .description {
+    margin-bottom: 2rem;
+  }
+
 }
 
 /****** desktop ******/
@@ -138,5 +142,9 @@ header .hi {
     height: 9rem;
     width: 9rem;
     margin-top: -30px;
+  }
+
+  .description {
+    margin-bottom: 3rem;
   }
 }
