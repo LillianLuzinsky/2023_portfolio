@@ -103,7 +103,6 @@
   max-width: 100%;
   border-radius: 10px;
   margin-bottom: 1.5rem;
-  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
 }
 
 .project-image:last-child {
@@ -145,8 +144,8 @@
   }
 
   .project-image {
-    border-radius: 15px;
     margin-bottom: 4rem;
+    border-radius: 15px;
   }
 }
 
@@ -159,7 +158,6 @@
   }
 
   .project-image {
-    border-radius: 25px;
     margin-bottom: 6rem;
   }
 }
