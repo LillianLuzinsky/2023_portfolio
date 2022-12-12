@@ -75,6 +75,29 @@ nav {
   transition: transform 300ms, background-color 300ms;
 }
 
+.nav-logo:hover::before {
+  content: " ";
+  position: absolute;
+  transform-origin: left;
+  transform: scaleX(1);
+  background-color: rgba(240, 55, 165, 1);
+}
+
+.nav-logo:hover {
+  font-style: italic;
+}
+
+.nav-logo svg {
+  fill: white;
+  height: 24px;
+  width: 24px;
+  transition: all 500ms ease;
+}
+
+.nav-logo:hover svg {
+  transform: skewX(-10deg);
+}
+
 .link {
   position: relative;
   border-radius: 100px;
@@ -159,18 +182,7 @@ nav {
 /****** desktop ******/
 
 @media (min-width: 1200px) {
-  .nav-logo:hover::before {
-  content: " ";
-  position: absolute;
-  transform-origin: left;
-  transform: scaleX(1);
-  background-color: rgba(240, 55, 165, 1);
-}
-
-.nav-logo:hover {
-  font-style: italic;
-}
-
+  
 .link:hover {
   transform: skew(-10deg, 0);
 }
