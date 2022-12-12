@@ -170,9 +170,9 @@ p {
    line-height: 2rem;
   }
 
-  .column p {
+  /* .column p {
     margin-bottom: 2rem;
-  }
+  } */
 }
 
 /****** tablet ******/
