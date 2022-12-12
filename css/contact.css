@@ -53,7 +53,7 @@
   transition: color 500ms;
   height: 100%;
   z-index: 1;
-  padding: 0 0.5rem;
+  padding: 0 0.2rem;
 }
 
 .contact-list a:hover {
