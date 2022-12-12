@@ -35,12 +35,16 @@ const navLi = document.querySelectorAll('nav .nav-container ul li');
 window.addEventListener('scroll', ()=> {
   let current = '';
   
-  sections.forEach (section => {
+  sections.forEach ((section, index) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    if(scrollY >= (sectionTop - sectionHeight/3)){
-      current = section.getAttribute('id');
+    if (window.scrollY >= sectionTop && (window.scrollY >= (sectionTop + sectionHeight - 200))) {
+      current = sections[index + 1] ? sections[index + 1].getAttribute('id') : section.getAttribute('id');
     }
+    else if(index ===0){
+      current = section.getAttribute('id')
+    }
+      
   })
   navLi.forEach( li => {
     li.classList.remove('active');
@@ -48,16 +52,20 @@ window.addEventListener('scroll', ()=> {
       li.classList.add('active');
     }
   })
-})
+}) //TODO: Fix scroll 
 
 //fade home on scroll //
 const headerHome = document.getElementById('home');
-    window.addEventListener('scroll', function(){
-      headerHome.style.opacity = 1 -+ window.pageYOffset/1000+'';
+
+if (headerHome)
+  window.addEventListener('scroll', function () {
+      
+      headerHome.style.opacity = 1 -+ window.pageYOffset/(window.innerHeight)+'';
       headerHome.style.backgroundPositionY =+ window.pageYOffset+'px';
     })
 
 const headerContent = document.getElementById('homepage');
+if(headerContent)
     window.addEventListener('scroll', function(){
       headerContent.style.opacity = 1 -+ window.pageYOffset/500+'';
     })
