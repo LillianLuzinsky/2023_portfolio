@@ -129,6 +129,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.column p:last-child {
+  margin-bottom: 0.5rem;
+}
+
 .column a {
   letter-spacing: 1px;
   color: #56ECFF;
@@ -148,7 +152,7 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-  /* margin-bottom: 2rem; */
+  margin-bottom: 2rem;
 }
 
 .copyright {
