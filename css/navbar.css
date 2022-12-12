@@ -71,6 +71,7 @@ nav {
   z-index: 0;
   transform: scaleX(0);
   transform-origin: right;
+  overflow: hidden;
   transition: transform 300ms, background-color 300ms;
 }
 
