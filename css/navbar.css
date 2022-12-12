@@ -134,6 +134,20 @@ nav {
   transition: transform 300ms, background-color 300ms;
 }
 
+.house-icon svg {
+  width: 1.5rem;
+  height: auto;
+  fill: rgba(255, 255, 255, 0.5);
+  transition: all 300ms ease;
+  display: none;
+}
+
+.house-icon:hover svg {
+  transform: skewX(-10deg);
+  fill: rgba(255, 255, 255, 1);
+}
+
+
 /****** mobile ******/ 
   @media (min-width: 350px){
      nav {
@@ -159,10 +173,6 @@ nav {
     padding-right: 3rem;
   }
 
-  .nav-container .nav-links {
-    max-width: 26rem;
-  }
-
   .nav-logo {
     font-size: 1.5rem;
     height: 2.5rem;
@@ -177,11 +187,20 @@ nav {
   .link {
     padding: 0rem 1rem;
   }
+
+  .house-icon svg {
+    display: flex;
+    margin-right: 2rem;
+  }
 }
 
 /****** desktop ******/
 
 @media (min-width: 1200px) {
+
+.nav-container .nav-links {
+   max-width: 28rem;
+}
   
 .link:hover {
   transform: skew(-10deg, 0);
