@@ -49,7 +49,7 @@
   line-height: 1.5rem;
   font-weight: 700;
   letter-spacing: 1px;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.5);
   height: 2rem;
   width: 2rem;
   border-radius: 10rem;
@@ -79,7 +79,7 @@
 }
 
 .small-icon path{
-  fill: rgba(255, 255, 255, 0.5);
+  fill: black;
 }
 
 
@@ -101,8 +101,8 @@
   border: none;
 }
 
-.next path {
-  fill: white;
+.next {
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .project-image {
